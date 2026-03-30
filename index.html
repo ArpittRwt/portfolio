@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio and projects exploring modern web development and design.">
+    <title>Modern Minimal Portfolio</title>
+    
+    <!-- Fonts: Inter (Clean Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav-brand">Portf<span class="accent">olio.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu Toggle (Semantic element) -->
+            <button class="nav-toggle" aria-label="Toggle navigation menu" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section fade-in">
+            <div class="container hero-container">
+                <h1 class="hero-title">Crafting digital experiences with <br>clean code and design.</h1>
+                <p class="hero-subtitle">
+                    I am a frontend developer and designer dedicated to building fast, accessible, and responsive user interfaces.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">See My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section bg-dim fade-in">
+            <div class="container about-container">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="about-content">
+                    <p>
+                        Hello there! I'm a passionate creator who specializes in modern web development. With a strong foundation in HTML, CSS, and Vanilla JavaScript, I construct elegant digital solutions that scale beautifully without unnecessary dependencies.
+                    </p>
+                    <p>
+                        My focus is always on the end-user. Whether it's ensuring 100% responsiveness across all mobile devices or writing accessible HTML templates, I believe that high performance and minimalism go hand in hand. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects / Portfolio Section -->
+        <section id="projects" class="projects section fade-in">
+            <div class="container projects-container">
+                <div class="section-header">
+                    <h2>Selected Work</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="projects-grid">
+                    
+                    <!-- Project Card 1 -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <!-- Placeholder image, using CSS or empty div -->
+                            <div class="project-img placeholder-1"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Analytics Dashboard</h3>
+                            <p>A minimalist data visualization interface built to prioritize fast readability and responsive charting for enterprise clients.</p>
+                            <a href="#" class="project-link" aria-label="View Analytics Dashboard project">View Project &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <div class="project-img placeholder-2"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-Commerce Architecture</h3>
+                            <p>A headless storefront UI utilizing modern css-grid techniques to display dense catalog matrices efficiently.</p>
+                            <a href="#" class="project-link" aria-label="View E-Commerce project">View Project &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3 -->
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <div class="project-img placeholder-3"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Design System Library</h3>
+                            <p>A comprehensive set of vanilla web components built with accessible semantics directly mapping to atomic design principles.</p>
+                            <a href="#" class="project-link" aria-label="View Design System project">View Project &rarr;</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section bg-dim fade-in">
+            <div class="container contact-container">
+                <div class="section-header">
+                    <h2>Let's Connect</h2>
+                    <div class="divider"></div>
+                    <p class="contact-subtext">Have a project in mind, or just want to say hi? Send me a message below!</p>
+                </div>
+                
+                <form class="contact-form" action="#" method="POST" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Jane Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" required placeholder="jane@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="How can I help you?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#">Portf<span class="accent">olio.</span></a>
+                <p>&copy; <span id="year"></span> All rights reserved.</p>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
